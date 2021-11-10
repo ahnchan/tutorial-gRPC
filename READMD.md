@@ -1,27 +1,10 @@
-# gRPC [Java] Master Class: Build Modern API and Microservices 
+# gRPC 
 
-
-
-# Instroduction
-
-> Note. 본 튜토리얼은 OReiliy 의 Video 강의인 "()[https://learning.oreilly.com/videos/grpc-java-master/9781838558048/]"의 내용을 간단한 설명과 코드로 구현한 것이다. 좀더 자세한 내용을 원하면 해당 강의를 듣기를 권장한다. 
-
-# Pre-Installation
-Java SDK
-IntelliJ Community Edition
-
-
-# 환경 구성하기
-gradle에 Defendency 추가
-https://github.com/grpc/grpc-java
-
-build.gradle
-
-라이브러리를 추가한다. 
-implementation 'io.grpc:grpc-netty-shaded:1.41.0'
-implementation 'io.grpc:grpc-protobuf:1.41.0'
-implementation 'io.grpc:grpc-stub:1.41.0'
-compileOnly 'org.apache.tomcat:annotations-api:6.0.53' // necessary for Java 9+
+Step1. gRPC Concepts & Dummy Service []()
+Step2. gRPC Unary: (작성중)[] 
+Step3. gRPC Client streaming: (작성중)[]
+Step4. gRPC Server streaming: (작성중)[]
+Step5. Bi Directional streaming: (작성중)[]
 
 
 plugin을 추가한다.
