@@ -26,10 +26,10 @@ public class GreetingClient {
                 .usePlaintext()
                 .build();
 
-//        unary(channel);
-//        serverStreaming(channel);
-//        clientStreaming(channel);
-        everyoneStreaming(channel);
+//        unary(channel); // Unar
+//        serverStreaming(channel); // Server streaming
+//        clientStreaming(channel); // Client streaming
+        everyoneStreaming(channel);   // Bi-directional
 
         System.out.println("Shutting down channel");
         channel.shutdown();
@@ -153,6 +153,11 @@ public class GreetingClient {
                                     .setFirstName(name)
                                     .build())
                             .build());
+                    try {
+                        Thread.sleep(300);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
         );
 

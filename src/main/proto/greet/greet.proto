@@ -46,11 +46,11 @@ service GreetService {
   // Unary
   rpc greet (GreetRequest) returns (GreetResponse) {};
 
-  // Client streaming
+  // Server streaming
   rpc greetManyTime (GreetManyRequest) returns (stream GreetManyResponse) {}
 
-  // Server Streaming
-  rpc longGreet (stream LongGreetRequest) returns (stream LongGreetResponse) {};
+  // Client Streaming
+  rpc longGreet (stream LongGreetRequest) returns (LongGreetResponse) {};
 
   // Bi Directional streaming
   rpc greetEveryone (stream GreetEveryRequest) returns (stream GreetEveryResponse) {};
